@@ -26,7 +26,7 @@ module Slackistrano
                        webhook: fetch(:slack_webhook)
                      )
                    else
-                     klass = opts.delete(:klass) || Messaging::Default
+                     klass = opts.delete(:klass) || Messaging::HighCo
                      klass.new(opts.merge(env: @env))
                    end
     end

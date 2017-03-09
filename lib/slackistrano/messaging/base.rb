@@ -70,4 +70,5 @@ module Slackistrano
 end
 
 require_relative 'default'
+require_relative 'highco'
 require_relative 'deprecated'

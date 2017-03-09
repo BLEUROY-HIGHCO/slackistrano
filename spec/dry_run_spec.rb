@@ -2,7 +2,7 @@ require 'spec_helper'
 
 describe Slackistrano do
   before(:all) do
-    set :slackistrano, { klass: Slackistrano::Messaging::Default }
+    set :slackistrano, { klass: Slackistrano::Messaging::HighCo }
   end
 
   %w[updating reverting updated reverted failed].each do |stage|
